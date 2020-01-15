@@ -10,7 +10,7 @@ class Field extends React.Component {
   render() {
     return (
       <LanguageContext.Consumer>
-        {language => (
+        {({ language }) => (
           <div className="field">
             <label>{this.renderField(language)}</label>
             <input type="text" />
